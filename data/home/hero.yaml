@@ -2,14 +2,15 @@ enabled: true
 id: "hero"
 
 content:
-  title: "How to **level up** your business"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est faucibus tellus leo non pellentesque lorem vel. Arcu magna eros, potenti duis."
+  title: "MEGA-ACE UNAM"
+  subtitle: "Alianza Global Multidisciplinaria y Educacional para el Centro de Excelencia Algorand"
+  text: "Nuestro objetivo es transformar el panorama de la blockchain. Estamos motivados por problemas concretos y pretendemos construir soluciones integrales para ellos, partiendo de la teoría fundamental hasta llegar a las aplicaciones. Estos problemas requieren enfoques multidisciplinarios, ya que implican cuestiones en áreas que van desde la economía y la elección social, hasta la Criptografía y la Arquitectura."
 
   buttonPrimary:
-    label: "How we work"
+    label: "Sobre nosotros"
     url: "#"
 
   buttonSecondary:
-    label: "Let's talk"
+    label: "Contáctanos"
     url: ""
 

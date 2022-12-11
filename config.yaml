@@ -2,19 +2,19 @@ baseURL: "https://www.example.com/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
-title: "Up Business"
+title: "MEGA-ACE UNAM"
 
 # googleAnalytics: ""
 
 summaryLength: 20
 
 params:
-  title: "Up Business"
-  description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
+  title: "MEGA-ACE UNAM"
+  description: "Nuestro objetivo es transformar el panorama de la blockchain."
   images: 
     - "images/hero-image.png"
 
-  logo: "arrow-up.png"
+  logo: "ACE.svg"
 
   favicons:
     themeColor: "#FFFFFF"
@@ -35,58 +35,66 @@ params:
     - "trungkienspktnd@gamail.com"
     - "207.555.0119"
 
-  copyright: "© 2022 Up Business All Rights Reserved"
+  copyright: "Copyright © 2023. Departamento de Computación / DIE / Facultad de Ingeniería / UNAM. Todos los Derechos Reservados."
 
   postProcess: false
 
 menus:
   main:
-    - name: "Home"
+    - name: "Acerca de"
       url: "/#hero"
       weight: 1
 
-    - name: "How we work"
+    - name: "Investigación"
       url: "/#"
       weight: 2
-
-    - name: "Our team"
+      
+    - name: "Noticias"
       url: "/#"
       weight: 3
 
-    - name: "Pricing"
+    - name: "Personas/Nuestro equipo"
       url: "/#"
       weight: 4
 
-    - name: "Blog"
-      url: "/blog"
+    - name: "Eventos"
+      url: "/#"
       weight: 5
 
+    - name: "Cursos"
+      url: "/blog"
+      weight: 6
+
   buttons:
-    - name: "Book a call"
+    - name: "Contacto"
       url: "/#"
       weight: 5
       pre: "btn btn-primary text-light"
 
   footer:
-    - name: "Home"
+    - name: "Acerca de"
       url: "/#hero"
       weight: 1
 
-    - name: "How we work"
+    - name: "Investigación"
       url: "/#"
       weight: 2
-
-    - name: "Our team"
+    
+    - name: "Noticias"
       url: "/#"
       weight: 3
 
-    - name: "Pricing"
+    - name: "Personas/Nuestro equipo"
       url: "/#"
       weight: 4
 
-    - name: "Blog"
-      url: "/blog"
+    - name: "Eventos"
+      url: "/#"
       weight: 5
+
+    - name: "Cursos"
+      url: "/blog"
+      weight: 6
 
 taxonomies:
   series: "series"

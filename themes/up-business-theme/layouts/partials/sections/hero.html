@@ -8,6 +8,11 @@
         {{ with .content.title }}
           <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start pb-4">{{ . | markdownify }}</h3>
         {{ end }}
+        
+        {{ with .content.subtitle }}
+          <h4 class="hero-title text-primary text-center text-xl-start pb-4">{{ . | markdownify }}</h4>
+        {{ end }}
+        
         {{ with .content.text }}
           <p class="text-center text-black-61 text-xl-start pb-4">{{ . | markdownify }}</p>
         {{ end }}
