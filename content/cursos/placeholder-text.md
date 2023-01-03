@@ -1,6 +1,6 @@
 +++
-author = "Hugo Authors"
-title = "Placeholder Text"
+author = "MEGA-ACE UNAM"
+title = "Diplomado en Criptografía"
 date = "2019-03-09"
 description = "Lorem Ipsum Dolor Si Amet"
 tags = [

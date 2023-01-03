@@ -10,18 +10,18 @@ content:
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
       button:
         label: "Leer más"
-        url: "#"
+        url: "/cursos/markdown-syntax"
 
     - image: "images/b4.png"
       title: "Criptomonedas"
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
       button:
         label: "Leer más"
-        url: "#"
+        url: "/cursos/markdown-syntax"
     
     - image: "images/b4.png"
       title: "Sistemas distribuidos"
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
       button:
         label: "Leer más"
-        url: "#"
+        url: "/cursos/markdown-syntax"

@@ -22,9 +22,9 @@ params:
     faviconColor: "#000000"
 
   social:
-    instagram: "#"
-    facebook: "#"
-    twitter: "#"
+    instagram: "https://www.instagram.com/unam_mx/"
+    facebook: "https://www.facebook.com/UNAM.MX.Oficial/"
+    twitter: "https://twitter.com/UNAM_MX"
 
   location:
     - "Facultad de Ingeniería, Av. Universidad 3000, Ciudad Universitaria, Coyoacán, Cd. Mx., CP 04510"
@@ -39,59 +39,59 @@ params:
 
 menus:
   main:
-    - name: "Acerca de"
-      url: "/#hero"
+    - name: "Sobre nosotros"
+      url: "/sobre_nosotros"
       weight: 1
 
     - name: "Investigación"
-      url: "/#"
+      url: "/investigacion"
       weight: 2
       
     - name: "Noticias"
-      url: "/#"
+      url: "/noticias"
       weight: 3
 
-    - name: "Personas/Nuestro equipo"
-      url: "/#"
+    - name: "Nuestro equipo"
+      url: "/equipo"
       weight: 4
 
     - name: "Eventos"
-      url: "/#"
+      url: "/eventos"
       weight: 5
 
     - name: "Cursos"
-      url: "/blog"
+      url: "/cursos"
       weight: 6
 
   buttons:
     - name: "Contacto"
-      url: "/#"
+      url: "/contacto"
       weight: 5
       pre: "btn btn-primary text-light"
 
   footer:
-    - name: "Acerca de"
-      url: "/#hero"
+    - name: "Sobre nosotros"
+      url: "/sobre_nosotros"
       weight: 1
 
     - name: "Investigación"
-      url: "/#"
+      url: "/investigacion"
       weight: 2
     
     - name: "Noticias"
-      url: "/#"
+      url: "/noticias"
       weight: 3
 
-    - name: "Personas/Nuestro equipo"
-      url: "/#"
+    - name: "Nuestro equipo"
+      url: "/equipo"
       weight: 4
 
     - name: "Eventos"
-      url: "/#"
+      url: "/eventos"
       weight: 5
 
     - name: "Cursos"
-      url: "/blog"
+      url: "/cursos"
       weight: 6
 
 taxonomies:

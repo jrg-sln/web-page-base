@@ -8,9 +8,9 @@ content:
 
   buttonPrimary:
     label: "Sobre nosotros"
-    url: "#"
+    url: "/acerca_de"
 
   buttonSecondary:
     label: "Contáctanos"
-    url: ""
+    url: "/contacto"
 

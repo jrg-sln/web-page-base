@@ -1,6 +1,6 @@
 ---
-author: Hugo Authors
-title: Math Typesetting
+author: MEGA-ACE UNAM
+title: Introducción a las criptomonedas
 date: 2019-03-08
 description: A brief guide to setup KaTeX
 math: true

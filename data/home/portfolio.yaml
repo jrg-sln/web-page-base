@@ -3,7 +3,7 @@ id: "portfolio"
 
 content:
   - image: "images/b11.png"
-    pretitle: "Actividades"
+    pretitle: "Investigación"
     title: "Apoyamos al desarrollo del blockchain"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
 
@@ -12,10 +12,10 @@ content:
       #  url: "#"
 
       - label: "Leer más"
-        url: "#"
+        url: "/noticias/markdown-syntax"
   
   - image: "images/b31.png"
-    pretitle: "Actividades"
+    pretitle: "Investigación"
     title: "Hacemos investigación con tecnología de punta"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
 
@@ -24,4 +24,28 @@ content:
       #  url: "#"
 
       - label: "Leer más"
-        url: "#"
+        url: "/investigacion/markdown-syntax"
+  
+  - image: "images/b11.png"
+    pretitle: "Noticias"
+    title: "Algoritmo X rompe récord de rendimiento"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      #- label: "Ver en vivo"
+      #  url: "#"
+
+      - label: "Leer más"
+        url: "/noticias/markdown-syntax"
+  
+  - image: "images/b31.png"
+    pretitle: "Noticias"
+    title: "Algorand crea nuevo algoritmo"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      #- label: "Ver en vivo"
+      #  url: "#"
+
+      - label: "Leer más"
+        url: "/noticias/markdown-syntax"

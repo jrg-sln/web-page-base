@@ -1,6 +1,6 @@
 +++
-author = "Hugo Authors"
-title = "Rich Content"
+author = "MEGA-ACE UNAM"
+title = "Introducción a Sistemas Distribuidos"
 date = "2019-03-10"
 description = "A brief description of Hugo Shortcodes"
 tags = [
