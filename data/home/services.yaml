@@ -2,26 +2,26 @@ enabled: true
 id: "services"
 
 content:
-  title: "Our main services"
+  title: "¿Qué es Blockchain?"
   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
   cards:
-    - image: "images/services-web-development.png"
-      title: "Web development"
+    - image: "images/b4.png"
+      title: "Criptografía"
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
       button:
-        label: "Learn more"
+        label: "Leer más"
         url: "#"
 
-    - image: "images/services-web-development.png"
-      title: "Web development"
+    - image: "images/b4.png"
+      title: "Criptomonedas"
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
       button:
-        label: "Learn more"
+        label: "Leer más"
         url: "#"
-
-    - image: "images/services-web-development.png"
-      title: "Web development"
+    
+    - image: "images/b4.png"
+      title: "Sistemas distribuidos"
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
       button:
-        label: "Learn more"
+        label: "Leer más"
         url: "#"

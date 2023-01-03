@@ -2,8 +2,8 @@ enabled: true
 id: "cta"
 
 content:
-  title: "Start your business now!"
-  image: "images/services-web-development.png"
+  title: "¡Aprende más sobre Blockchain!"
+  image: "images/hero-image.png"
   button:
-    label: "Let's talk"
+    label: "Aprender más"
     url: "#"

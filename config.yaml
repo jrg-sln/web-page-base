@@ -14,7 +14,7 @@ params:
   images: 
     - "images/hero-image.png"
 
-  logo: "ACE.svg"
+  logo: "logo.png"
 
   favicons:
     themeColor: "#FFFFFF"
@@ -22,18 +22,16 @@ params:
     faviconColor: "#000000"
 
   social:
-    dribbble: "#"
     instagram: "#"
     facebook: "#"
     twitter: "#"
 
   location:
-    - "3891 Ranchview Dr. Richardson, California 62639"
-    - "4517 Washington Ave. Manchester, Kentucky 39495"
+    - "Facultad de Ingeniería, Av. Universidad 3000, Ciudad Universitaria, Coyoacán, Cd. Mx., CP 04510"
 
   contact:
-    - "trungkienspktnd@gamail.com"
-    - "207.555.0119"
+    - "algorand@unam.mx"
+    - "55 0000 0000"
 
   copyright: "Copyright © 2023. Departamento de Computación / DIE / Facultad de Ingeniería / UNAM. Todos los Derechos Reservados."
 
