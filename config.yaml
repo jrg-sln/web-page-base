@@ -47,8 +47,8 @@ menus:
       url: "/investigacion"
       weight: 2
       
-    - name: "Noticias"
-      url: "/noticias"
+    - name: "Noticias/Artículos"
+      url: "/noticias-articulos"
       weight: 3
 
     - name: "Nuestro equipo"
@@ -78,8 +78,8 @@ menus:
       url: "/investigacion"
       weight: 2
     
-    - name: "Noticias"
-      url: "/noticias"
+    - name: "Noticias/Artículos"
+      url: "/noticias-articulos"
       weight: 3
 
     - name: "Nuestro equipo"

@@ -7,7 +7,10 @@
             <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
           {{ end }}
           {{ with .Params.description }}
-            <p class="text-black-61 text-center pb-3">{{ . }}</p>
+            <p class="text-black-61 text-center fw-bold">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.dates }}
+            <p class="text-center pb-3 fw-semibold">{{ . }}</p>
           {{ end }}
         </div>
       </div>
