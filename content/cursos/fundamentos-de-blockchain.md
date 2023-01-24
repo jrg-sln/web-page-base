@@ -1,6 +1,7 @@
 +++
 title = "Fundamentos de Blockchain"
 dates = "30 de enero de 2023"
+date = "2023-01-30"
 description = "Curso nivel posgrado"
 +++
 

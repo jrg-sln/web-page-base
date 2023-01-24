@@ -1,6 +1,7 @@
 +++
 title = "Fundamentos de Blockchain en Algorand"
 dates = "23 a 27 de enero de 2023"
+date = "2023-01-23"
 description = "Curso para profesores"
 +++
 

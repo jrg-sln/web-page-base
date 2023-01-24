@@ -1,6 +1,7 @@
 +++
 title = "¿Qué es Blockchain?"
 dates = "Marzo 2023"
+date = "2023-03-01"
 description = "Material digital de apoyo"
 +++
 
