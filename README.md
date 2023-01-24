@@ -21,7 +21,7 @@ los pasos de crear o modificar el archivo `netlify.toml`. **Nota**: Se debe modi
 
 ## ¿Cómo agregar/modificar/eliminar contenido?
 
-En general, para modificar el contenido del sitio sólo es necesario editar los archivos apropiados de Markdown. Para explorar
+En general, para modificar el contenido del sitio sólo es necesario editar los archivos apropiados de Markdown (o YAML en algunos casos). Para explorar
 todas las opciones de formato que se ofrecen, es posible consultar la guía de Markdown: https://www.markdownguide.org/basic-syntax/. De igual forma, dentro del proyecto existen algunos archivos de ejemplo para ilustrar las distintas posibilidades.
 Estos están presentes en el subdirectorio `themes/up-business-theme/hugoBasicExample/content/post`.
 
@@ -32,8 +32,8 @@ El archivo `config.yaml` contiene parámetros generales configurables sobre el s
 
 ### Landing page
 
-Los archivos relacionados se encuentran en el subdirectorio `data/home`. Cada archivo corresponde a las distintas secciones
-de la página en cuestión. Sólo es necesario modificar el texto presente en dichos archivos, según corresponda.
+Los archivos relacionados se encuentran en el subdirectorio `data/home`. Cada archivo YAML corresponde a las distintas secciones
+de la página en cuestión. Sólo es necesario modificar el texto presente para los campos en dichos archivos, según corresponda.
 
 
 ### Páginas de contenido (Cursos, Nuestro Equipo, etc.)
