@@ -48,6 +48,7 @@ title = "Título principal de la entrada (nombre del artículo, persona, noticia
 dates = "Fecha (o fechas) a mostrar, con formato libre"
 date = "Fecha en formato AAAA-MM-DD, sobre la cuál se determinará el orden de los elementos en la página, del más reciente al más antiguo. Si se tiene un rango de fechas en dates, se recomienda poner la fecha de inicio"
 description = "Descripción del elemento en cuestión"
+link = "Link de página externa en lugar de mostrar el contenido completo (noticias/artículos)"
 images = ["/images/path/a/la/imagen"]
 +++
 
