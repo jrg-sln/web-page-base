@@ -93,7 +93,3 @@ menus:
     - name: "Cursos"
       url: "/cursos"
       weight: 6
-
-taxonomies:
-  series: "series"
-  tags: "tags"
