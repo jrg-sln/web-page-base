@@ -3,25 +3,25 @@ id: "info"
 
 content:
   title: "¿Qué es Blockchain?"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  text: "Es un sistema de registro distribuido que se utiliza para registrar transacciones y mantener una base de datos compartida. Utiliza tecnología de criptografía para asegurar la integridad de la información almacenada, y permite que varios usuarios tengan acceso a la base de datos sin la necesidad de un intermediario centralizado. Es conocido principalmente por ser la tecnología subyacente a la criptomoneda Bitcoin, pero se está utilizando cada vez más en una variedad de aplicaciones, como el seguimiento de activos, la gestión de contratos y la votación electrónica."
   cards:
     - image: "images/b4.png"
-      title: "Criptografía"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "¿Qué es Blockchain?"
+      text: "Artículo de investigación próximo a ser publicado en el Boletín de la Academia Mexicana de Computación-AMEXCOMP."
       button:
         label: "Leer más"
-        url: "/cursos/markdown-syntax"
+        url: "/cursos/que-es-blockchain/"
 
     - image: "images/b4.png"
-      title: "Criptomonedas"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "Fundamentos de Blockchain en Algorand"
+      text: "Taller de 15 horas para estudiantes durante el período intersemestral."
       button:
         label: "Leer más"
-        url: "/cursos/markdown-syntax"
+        url: "/cursos/fundamentos-de-blockchain-en-algorand-licenciatura/"
     
     - image: "images/b4.png"
-      title: "Sistemas distribuidos"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "Introducción a Blockchain"
+      text: "Se tratarán todos los temas fundamentales del Blockchain para que los estudiantes se familizaricen con este tipo de tecnologías."
       button:
         label: "Leer más"
-        url: "/cursos/markdown-syntax"
+        url: "/cursos/introduccion-a-blockchain/"

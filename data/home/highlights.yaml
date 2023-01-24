@@ -4,48 +4,19 @@ id: "highlights"
 content:
   - image: "images/b11.png"
     pretitle: "Investigación"
-    title: "Apoyamos al desarrollo del blockchain"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    title: "Apoyamos al desarrollo del Blockchain"
+    text: "Conoce nuestras aportaciones para llevar al siguiente nivel la investigación sobre Blockchain."
 
-    buttons: 
-      #- label: "Ver en vivo"
-      #  url: "#"
-
+    buttons:
       - label: "Leer más"
-        url: "/noticias/markdown-syntax"
+        url: "/investigacion"
   
+
   - image: "images/b31.png"
-    pretitle: "Investigación"
-    title: "Hacemos investigación con tecnología de punta"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    pretitle: "Noticias/Artículos"
+    title: "Entérate de lo último sobre Blockchain"
+    text: "Visita nuestra sección de noticias y artículos selectos."
 
-    buttons: 
-      #- label: "Ver en vivo"
-      #  url: "#"
-
+    buttons:
       - label: "Leer más"
-        url: "/investigacion/markdown-syntax"
-  
-  - image: "images/b11.png"
-    pretitle: "Noticias"
-    title: "Algoritmo X rompe récord de rendimiento"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-    buttons: 
-      #- label: "Ver en vivo"
-      #  url: "#"
-
-      - label: "Leer más"
-        url: "/noticias/markdown-syntax"
-  
-  - image: "images/b31.png"
-    pretitle: "Noticias"
-    title: "Algorand crea nuevo algoritmo"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-    buttons: 
-      #- label: "Ver en vivo"
-      #  url: "#"
-
-      - label: "Leer más"
-        url: "/noticias/markdown-syntax"
+        url: "/noticias-articulos"
