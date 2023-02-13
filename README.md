@@ -50,6 +50,8 @@ date = "Fecha en formato AAAA-MM-DD, sobre la cuál se determinará el orden de 
 description = "Descripción del elemento en cuestión"
 link = "Link de página externa en lugar de mostrar el contenido completo (noticias/artículos)"
 images = ["/images/path/a/la/imagen"]
+category = "Nombre de la sección a la que pertenece este post. Por ejemplo, en Investigación puede ser Revistas"
+disabledlink = "true si se desea desactivar el link de esta tarjeta. Cualquier otro texto u omitir el parámetro si se desea que el comportamiento sea el normal (mostrar el link si es que existe, o el texto presente en el documento de Markdown)"
 +++
 
 Parte inicial del contenido a mostrar
