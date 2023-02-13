@@ -23,7 +23,14 @@
         {{ $listofposts = $listofposts | append . }}
         {{ $categorizedPages = merge $categorizedPages (dict $category $listofposts) }}
       {{ end }}
+      {{ $categorizedPagesSlice := slice }}
       {{ range $category, $pages := $categorizedPages }}
+        {{ $categorizedPagesSlice = $categorizedPagesSlice | append (dict "category" $category "pages" $pages) }}
+      {{ end }}
+      {{ $categorizedPagesSlice = sort $categorizedPagesSlice ".category" "desc"  }}
+      {{ range $categorizedPagesSlice }}
+        {{ $category := .category }}
+        {{ $pages := .pages }}
         {{ if ne $category "No Category" }}
           <h3 class="text-black-61 fw-bold text-center pb-3">{{ $category }}</h3>
         {{ end }}
@@ -50,9 +57,9 @@
           {{ end }}
         </div>
       {{ end }}
-      <div class="row pb-5">
+      <!-- <div class="row pb-5">
         {{ template "_internal/pagination.html" . }}
-      </div>
+      </div> -->
     </div>
   </section>
 {{ end }}
