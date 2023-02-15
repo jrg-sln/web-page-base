@@ -1,3 +1,15 @@
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.centered-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 .fw-semibold {
   font-weight: 600;
 }

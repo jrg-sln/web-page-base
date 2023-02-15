@@ -83,8 +83,16 @@ Se tratarán los aspectos fundamentales del Blockchain, Algorand, y transaccione
 
 ## Imágenes
 
-Para agregar imágenes nuevas, es necesario colocarlas dentro del subdirectorio `themes/up-business-theme/assets/images`. Dentro de éste, es posible estructurar las imágenes en subdirectorios según convenga. Por ejemplo, se podrían colocar todas las imágenes utilizadas para la página de Cursos en un subdirectorio `cursos`. Al momento de utilizar la imagen en los archivos Markdown, es necesario especificar un path absoluto (empezando con /) con respecto al subdirectorio `themes/up-business-theme/assets`. Es decir, si quisiera utilizar una imagen colocada en el subdirectorio `cursos` mencionado, el path correcto a utilizar sería `/images/cursos/imagen.png`.
+Para agregar imágenes nuevas, ya sea a través del front-matter de un archivo Markdown (para asignar una imagen a una tarjeta) o en su contenido, es necesario colocarlas dentro del subdirectorio `themes/up-business-theme/assets/images`. Dentro de éste, es posible estructurar las imágenes en subdirectorios según convenga. Por ejemplo, se podrían colocar todas las imágenes utilizadas para la página de Cursos en un subdirectorio `cursos`. Al momento de referenciar la imagen en los archivos Markdown, es necesario especificar un path absoluto (empezando con /) con respecto al subdirectorio `themes/up-business-theme/assets`. Es decir, si quisiera utilizar una imagen colocada en el subdirectorio `cursos` mencionado, el path correcto a utilizar sería `/images/cursos/imagen.png`.
 
+
+#### Ejemplos de cómo agregar una imagen dentro de un post (archivo Markdown):
+
+```
+![Fotografía de Armando Castañeda](/images/equipo/armando-castaneda.jpg "Armando Castañeda")
+
+{{< figure src="/images/equipo/armando-castaneda.jpg" class="centered-image" alt="Armando Castañeda" >}}
+```
 
 
 ## ¿Cómo modificar la estructura de la página?
