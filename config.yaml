@@ -1,6 +1,8 @@
-baseURL: "https://glistening-kheer-159f89.netlify.app/"
+baseURL: "http://odin.fi-b.unam.mx/algorand/"
 theme: "up-business-theme"
 languageCode: "en-us"
+canonifyurls: "true"
+
 
 title: "MEGA-ACE UNAM"
 
