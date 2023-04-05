@@ -17,4 +17,4 @@ jobs:
         run: sudo apt-get install -y sshpass
 
       - name: Deploy site
-        run: sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh "${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}" 'cd ${{ secrets.PROJECT_ROOT }} && git clone ${{ secrets.PROJECT_REPO_URL }} && cd mega-ace-unam && hugo --gc --buildFuture && cp -r public/** .. && cd .. && rm -rf mega-ace-unam'
+        run: sshpass -v -p "${{ secrets.SSH_PASSWORD }}" ssh "${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}" 'cd ${{ secrets.PROJECT_ROOT }} && git clone ${{ secrets.PROJECT_REPO_URL }} && cd mega-ace-unam && hugo --gc --buildFuture && cp -r public/** .. && cd .. && rm -rf mega-ace-unam'
