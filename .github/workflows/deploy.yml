@@ -9,6 +9,10 @@ jobs:
   deploy:
     name: "Deploy to server"
     runs-on: ubuntu-latest
+    env:
+        SSH_USER: ${{ secrets.SSH_USER }}
+        SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+        SSH_IP: ${{ secrets.SSH_IP }}
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
@@ -17,4 +21,4 @@ jobs:
         run: sudo apt-get install -y sshpass
 
       - name: Deploy site
-        run: sshpass -v -p "${{ secrets.SSH_PASSWORD }}" ssh "${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}" 'cd ${{ secrets.PROJECT_ROOT }} && git clone ${{ secrets.PROJECT_REPO_URL }} && cd mega-ace-unam && hugo --gc --buildFuture && cp -r public/** .. && cd .. && rm -rf mega-ace-unam'
+        run: sshpass -v -p "$SSH_PASSWORD" ssh "$SSH_USER@$SSH_IP" 'cd ${{ secrets.PROJECT_ROOT }} && git clone ${{ secrets.PROJECT_REPO_URL }} && cd mega-ace-unam && hugo --gc --buildFuture && cp -r public/** .. && cd .. && rm -rf mega-ace-unam'
