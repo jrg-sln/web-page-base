@@ -5,6 +5,24 @@
 
 <!-- Load Shared JS -->
 {{- $sharedJS := resources.Get "js/shared/shared.js" -}}
+<!-- {{- $sharedJS := $sharedJS | js.Build (dict "minify" "true") -}} -->
 
 <style type="text/css" media="all">{{ $sharedSCSS.Content | safeCSS }}</style>
-<script>{{- $sharedJS.Content | safeJS -}}</script>
+
+
+{{ $sharedHeaderJS := resources.Get "js/shared/_header.js" }}
+{{ $sharedFooterJS := resources.Get "js/shared/_footer.js" }}
+{{ $heroJS := resources.Get "js/sections/hero.js" }}
+{{ $brandsJS := resources.Get "js/sections/brands.js" }}
+{{ $portfolioJS := resources.Get "js/sections/portfolio.js" }}
+{{ $servicesJS := resources.Get "js/sections/services.js" }}
+{{ $testimonialsJS := resources.Get "js/sections/testimonials.js" }}
+{{ $ctaJS := resources.Get "js/sections/cta.js" }}
+{{ $blogListJS := resources.Get "js/sections/blog-list.js" }}
+{{ $blogSingleJS := resources.Get "js/sections/blog-single.js" }}
+{{ $bootstrap := resources.Get "bootstrap/dist/js/bootstrap.bundle.js" }}
+
+{{ $scripts := slice $bootstrap $sharedHeaderJS $sharedFooterJS $heroJS $brandsJS $portfolioJS $servicesJS $testimonialsJS $ctaJS $blogListJS $blogSingleJS }}
+{{ $globalJS := $scripts | resources.Concat "js/global.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $globalJS.Permalink }}"></script>
+
