@@ -14,15 +14,46 @@
 
 ## Despliegue
 
+### 1. Utilizando Netlify
+
 Actualmente, el proyecto soporta despliegue automático con Netlify. Para implementarlo, se pueden seguir los pasos
 del tutorial oficial de Hugo: https://gohugo.io/hosting-and-deployment/hosting-on-netlify/. Ya no es necesario realizar
 los pasos de crear o modificar el archivo `netlify.toml`. **Nota**: Se debe modificar la baseURL presente en `config.yaml` a la utilizada.
+
+### 2. Utilizando un servidor propio
+
+Otra opción es desplegar el sitio web en un servidor directamente (proporcionado, por ejemplo, por un proveedor de 
+servicios en la nube o alguna escuela). Actualmente, se utiliza un servidor de la Facultad de Ingeniería de la UNAM
+para hostear el sitio, el cual ejecuta un servidor web (consultar detalles con los responsables).
+En el directorio `.github/workflows` se encuentra el archivo `deploy.yml`, el cual define un pipeline de despliegue
+continuo para que, cuando se haga un push a la rama `main`, el sitio se actualice de forma automática en vivo a la 
+brevedad. En pocas palabras, la "action" se conecta al servidor, clona este repositorio, compila el sitio web, y coloca los archivos resultantes en un subdirectorio manejado por el servidor web, que se encargará de servir las páginas 
+adecuadamente. Es posible modificar esta acción o incluso crear nuevas con otras funcionalidades. Para más información,
+consultar la documentación de Github Actions.
+
+Si se utiliza este método, es necesario realizar algunas configuraciones en el repositorio. Si es el 
+ caso, se debe de ir al tab `Settings/Code and Automation/Actions/General`, donde se encuentran algunas configuraciones 
+ importantes. Para activar el uso de Github Actions, se debe seleccionar una opción adecuada en la primera sección 
+ (Actions permissions), si es que no se encuentra activado aún. `Allow all actions and reusable workflows` puede ser
+ una de ellas, ya que permite la ejecución de todos los workflows presentes en el repositorio.
+
+Por otro lado, será necesario agregar algunos "secretos" de repositorio para conectarse al servidor y no revelar los 
+ datos públicamente. Para lo anterior, se debe ir al tab
+ `Settings/Security/Secrets and variables/Actions/Repository secrets`, y agregar los siguientes valores:
+
+- **PROJECT_REPO_URL**: URL del repositorio con el código actualizado de la página web.
+- **PROJECT_ROOT**: Path al directorio manejado por el servidor web. Aquí se colocarán todos los archivos del sitio 
+compilados.
+- **SSH_IP**: Dirección IP del servidor.
+- **SSH_PASSWORD**: Contraseña a utilizar en una conexión SSH al servidor.
+- **SSH_USER**: Usuario a utilizar en una conexión SSH al servidor.
+
 
 
 ## ¿Cómo agregar/modificar/eliminar contenido?
 
 En general, para modificar el contenido del sitio sólo es necesario editar los archivos apropiados de Markdown (o YAML en algunos casos). Para explorar
-todas las opciones de formato que se ofrecen, es posible consultar la guía de Markdown: https://www.markdownguide.org/basic-syntax/. De igual forma, dentro del proyecto existen algunos archivos de ejemplo para ilustrar las distintas posibilidades.
+todas las opciones de formato que se ofrecen, es posible consultar la guía de Markdown: https://www.markdownguide.org/basic-syntax/. De igual forma, dentro del proyecto existen algunos archivos de ejemplo para ilustrar las distintas funcionalidades de Markdown.
 Estos están presentes en el subdirectorio `themes/up-business-theme/hugoBasicExample/content/post`.
 
 
@@ -40,18 +71,33 @@ de la página en cuestión. Sólo es necesario modificar el texto presente para 
 
 Los archivos relacionados se encuentran en el subdirectorio `content`. Para las páginas de Contacto y Sobre Nosotros, se cuenta 
 únicamente con un archivo Markdown con el contenido de cada una. Para las demás páginas, se tienen subdirectorios específicos con
-el contenido. En estos subdirectorios, se tiene un archivo _index.md, donde se especifica el título de la página. Además, también se encuentran presentes los archivos con las publicaciones individuales respectivas (cursos, noticias, artículos, etc.), cuya estructura es la siguiente:
+el contenido. En estos subdirectorios, se tiene un archivo _index.md, donde se especifica el título de la página. De igual forma, también se encuentran presentes los archivos con las publicaciones individuales respectivas (cursos, noticias, artículos, etc.), que se puede considerar son los más importantes debido a que poseen el contenido principal. Sus posibles atributos y estructura son los siguientes:
 
 ```
 +++
 title = "Título principal de la entrada (nombre del artículo, persona, noticia, etc.)"
+
 dates = "Fecha (o fechas) a mostrar, con formato libre"
+
 date = "Fecha en formato AAAA-MM-DD, sobre la cuál se determinará el orden de los elementos en la página, del más reciente al más antiguo. Si se tiene un rango de fechas en dates, se recomienda poner la fecha de inicio"
+
 description = "Descripción del elemento en cuestión"
+
 link = "Link de página externa en lugar de mostrar el contenido completo (noticias/artículos)"
+
 images = ["/images/path/a/la/imagen"]
+
 category = "Nombre de la sección a la que pertenece este post. Por ejemplo, en Investigación puede ser Revistas"
+
 disabledlink = "true si se desea desactivar el link de esta tarjeta. Cualquier otro texto u omitir el parámetro si se desea que el comportamiento sea el normal (mostrar el link si es que existe, o el texto presente en el documento de Markdown)"
+
+profilephoto = "true si se desea que la imagen se muestre de forma más 'larga' verticalmente. Esto permite que las imágenes de la sección Nuestro Equipo no se vean tan cortadas, sin necesidad de deformarlas. Cualquier otro texto u omitir el parámetro si se desea que el comportamiento sea el normal (mostrar la imagen donde posiblemente se corte una
+parte considerable)"
+
+forcewidthfit = "true si se desea que la imagen se muestre de forma completa de forma horizontal en la tarjeta que la contiene, posiblemente deformando la imagen. Esto permite que algunos banners de la sección Eventos se aprecien completamente, sacrificando un poco la calidad de la imagen al deformarse. Cualquier otro texto u omitir el parámetro si se desea que el comportamiento sea el normal (mostrar la imagen donde posiblemente se corte una
+parte considerable)"
+
+noimage = "true si se desea que la tarjeta no contenga ninguna imagen, y abarque todo el espacio horizontal disponible en la pantalla. Esto permite que las referencias en la sección de Investigación se muestren en un formato apropiado, omitiendo la imagen al no ser necesaria. Cualquier otro texto u omitir el parámetro si se desea que el comportamiento sea el normal (mostrar la imagen)"
 +++
 
 Parte inicial del contenido a mostrar
@@ -59,7 +105,7 @@ Esto se mostrará como un breve resumen dentro de la tarjeta mostrada en la pág
 
 <!--more--> (Esta línea permite delimitar dónde va a terminar el resumen, y es opcional colocarla)
 
-Resto del contenido...
+Resto del contenido utilizando funcionalidades de Markdown...
 ```
 
 El único parámetro obligatorio es `title`, por lo que se pueden omitir los demás de no ser necesarios.
@@ -81,9 +127,11 @@ Taller de 15 horas para estudiantes durante el período intersemestral.
 Se tratarán los aspectos fundamentales del Blockchain, Algorand, y transacciones en pyteal. Se llevará a cabo del 23 al 27 de enero de 2023. 
 ```
 
+Para agregar contenido a una sección, se recomienda tomar como ejemplo un documento existente en la misma, utilizando los mismos atributos que se encuentran en él (ya que usualmente no se utilizan todos en todas las secciones).
+
 ## Imágenes
 
-Para agregar imágenes nuevas, ya sea a través del front-matter de un archivo Markdown (para asignar una imagen a una tarjeta) o en su contenido, es necesario colocarlas dentro del subdirectorio `themes/up-business-theme/assets/images`. Dentro de éste, es posible estructurar las imágenes en subdirectorios según convenga. Por ejemplo, se podrían colocar todas las imágenes utilizadas para la página de Cursos en un subdirectorio `cursos`. Al momento de referenciar la imagen en los archivos Markdown, es necesario especificar un path absoluto (empezando con /) con respecto al subdirectorio `themes/up-business-theme/assets`. Es decir, si quisiera utilizar una imagen colocada en el subdirectorio `cursos` mencionado, el path correcto a utilizar sería `/images/cursos/imagen.png`.
+Para agregar imágenes nuevas, ya sea a través del front-matter (encabezado) de un archivo Markdown (para asignar una imagen a una tarjeta) o en su contenido, es necesario colocarlas dentro del subdirectorio `themes/up-business-theme/assets/images`. Dentro de éste, es posible estructurar las imágenes en subdirectorios según convenga. Por ejemplo, se podrían colocar todas las imágenes utilizadas para la página de Cursos en un subdirectorio `cursos`. Al momento de referenciar la imagen en los archivos Markdown, es necesario especificar un path absoluto (empezando con /) con respecto al subdirectorio `themes/up-business-theme/assets`. Es decir, si quisiera utilizar una imagen colocada en el subdirectorio `cursos` mencionado, el path correcto a utilizar sería `/images/cursos/imagen.png`.
 
 
 #### Ejemplos de cómo agregar una imagen dentro de un post (archivo Markdown):
@@ -161,20 +209,29 @@ age = "old"
 Una vez realizado lo anterior, será necesario modificar el archivo `themes/up-business-theme/layouts/_default/list.html`, modificando lo necesario en la siguiente parte del código, que se encarga de mostrar las tarjetas:
 
 ```
- {{ range (.Paginate .RegularPages).Pages }}
-        <div class="col-12 col-md-6 col-lg-4">
-          <a class="card text-decoration-none h-100" href="{{ if .Params.link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}">
-            <div class="aspect-ratio-62-5">
-              {{ with ( partial "utilities/get-featured-image.html" . ) }}
-                {{ partial "utilities/card-img-top" . }}
-              {{ end }}
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-semibold">{{ .Title }}</h5>
-              <p class="card-text text-black-61 fw-semibold">{{ .Params.description }}</p>
-              {{ .Params.dates }}
-              <p class="card-text text-black-61">{{ .Summary | plainify }}</p>
-            </div>
-          </a>
+ {{ range $pages }}
+    {{ $page := . }}
+    <div class="{{ if $page.Params.noimage }}col-12{{ else }}col-12 col-md-6 col-lg-4{{ end }}">
+      <a class="card text-decoration-none h-100" href="{{ if $page.Params.link }}{{ $page.Params.link }}{{ else }}{{ $page.Permalink }}{{ end }}"
+      {{ if eq $page.Params.disabledlink "true" }}style="pointer-events: none"{{ end }}>
+
+        {{ if ne $page.Params.noimage "true" }}
+        <div class="aspect-ratio-62-5{{ if $page.Params.profilephoto}} profile-photo{{ end }} 
+        {{ if $page.Params.forcewidthfit}} force-width-fit{{ end }}">
+          
+            {{ with ( partial "utilities/get-featured-image.html" $page ) }}
+              {{ partial "utilities/card-img-top" . }}
+            {{ end }}
+          
         </div>
+        {{ end }}
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">{{ $page.Title }}</h5>
+          <p class="card-text text-black-61 fw-semibold">{{ $page.Params.description }}</p>
+          {{ $page.Params.dates }}
+          <p class="card-text text-black-61">{{ $page.Summary | plainify }}</p>
+        </div>
+      </a>
+    </div>
+  {{ end }}
 ```
