@@ -26,8 +26,7 @@ Otra opción es desplegar el sitio web en un servidor directamente (proporcionad
 servicios en la nube o alguna escuela). Actualmente, se utiliza un servidor de la Facultad de Ingeniería de la UNAM
 para hostear el sitio, el cual ejecuta un servidor web (consultar detalles con los responsables).
 En el directorio `.github/workflows` se encuentra el archivo `deploy.yml`, el cual define un pipeline de despliegue
-continuo para que, cuando se haga un push a la rama `main`, el sitio se actualice de forma automática en vivo a la 
-brevedad. En pocas palabras, la "action" se conecta al servidor, clona este repositorio, compila el sitio web, y coloca los archivos resultantes en un subdirectorio manejado por el servidor web, que se encargará de servir las páginas 
+continuo para que, cuando se haga un push a la rama `main`, el sitio se actualice de forma automática en vivo. En pocas palabras, la "action" se conecta al servidor, clona este repositorio, compila el sitio web, y coloca los archivos resultantes en un subdirectorio manejado por el servidor web, que se encargará de servir las páginas 
 adecuadamente. Es posible modificar esta acción o incluso crear nuevas con otras funcionalidades. Para más información,
 consultar la documentación de Github Actions.
 
