@@ -95,3 +95,10 @@
 .profile-photo {
   padding-bottom: 120.0%;
 }
+
+
+.force-width-fit {
+  img {
+    object-fit: fill;
+  }
+}

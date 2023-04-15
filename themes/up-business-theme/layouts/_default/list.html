@@ -42,7 +42,8 @@
               {{ if eq $page.Params.disabledlink "true" }}style="pointer-events: none"{{ end }}>
 
                 {{ if ne $page.Params.noimage "true" }}
-                <div class="aspect-ratio-62-5{{ if $page.Params.profilephoto}} profile-photo{{ end }}">
+                <div class="aspect-ratio-62-5{{ if $page.Params.profilephoto}} profile-photo{{ end }} 
+                {{ if $page.Params.forcewidthfit}} force-width-fit{{ end }}">
                   
                     {{ with ( partial "utilities/get-featured-image.html" $page ) }}
                       {{ partial "utilities/card-img-top" . }}
