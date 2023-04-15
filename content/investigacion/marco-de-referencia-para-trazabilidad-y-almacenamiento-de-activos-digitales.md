@@ -4,4 +4,5 @@ dates = "2022"
 date = "2022-02-12"
 category = "Congresos"
 disabledlink = "true"
+noimage = "true"
 +++

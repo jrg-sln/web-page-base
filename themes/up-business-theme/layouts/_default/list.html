@@ -37,15 +37,19 @@
         <div class="row g-4 pb-5">
           {{ range $pages }}
             {{ $page := . }}
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="{{ if $page.Params.noimage }}col-12{{ else }}col-12 col-md-6 col-lg-4{{ end }}">
               <a class="card text-decoration-none h-100" href="{{ if $page.Params.link }}{{ $page.Params.link }}{{ else }}{{ $page.Permalink }}{{ end }}"
               {{ if eq $page.Params.disabledlink "true" }}style="pointer-events: none"{{ end }}>
 
+                {{ if ne $page.Params.noimage "true" }}
                 <div class="aspect-ratio-62-5">
-                  {{ with ( partial "utilities/get-featured-image.html" $page ) }}
-                    {{ partial "utilities/card-img-top" . }}
-                  {{ end }}
+                  
+                    {{ with ( partial "utilities/get-featured-image.html" $page ) }}
+                      {{ partial "utilities/card-img-top" . }}
+                    {{ end }}
+                  
                 </div>
+                {{ end }}
                 <div class="card-body">
                   <h5 class="card-title fw-semibold">{{ $page.Title }}</h5>
                   <p class="card-text text-black-61 fw-semibold">{{ $page.Params.description }}</p>
