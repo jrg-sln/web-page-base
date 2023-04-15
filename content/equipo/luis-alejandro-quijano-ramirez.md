@@ -1,8 +1,9 @@
 +++
 title = "Luis Alejandro Quijano Ramírez"
-dates = "Enero 2023"
 date = "2023-01-01"
-description = "Servicio social"
-images = ["/images/user.png"]
+description = "Servicio Social, FI"
+images = ["/images/equipo/servicio-social/luis-quijano.jpg"]
 category = "Alumnos de Ingeniería"
+disabledlink = "true"
+profilephoto = "true"
 +++

@@ -1,10 +1,11 @@
 +++
 title = "Dra. Rocío Aldeco"
-date = "2023-01-01"
+date = "2023-04-15"
 images = ["/images/equipo/rocio-aldeco.jpg"]
 category = "Investigadores"
+profilephoto = "true"
 +++
 
 {{< figure src="/images/equipo/rocio-aldeco.jpg" class="centered-image" alt="Rocío Aldeco" >}}
 
-Rocío Aldeco-Pérez holds a PhD in Computer Science from the University of Southampton, United Kingdom and is a specialist in the areas of Cryptography and Security. She is currently a full time professor at the Faculty of Engineering, UNAM, where she conducts research and teaches. Her research interests lie in information privacy, decentralized and distributed authentication protocols and security applications using blockchain. She is a member of the Mexican Academy of Computing and part of the executive committee of ACM-W in addition to actively participating in the "Technovation" and "Women in STEM, Future Leaders" movements.
+Rocío Aldeco-Pérez es Doctora en Ciencias de la Computación por la Universidad de Southampton, Reino Unido y es especialista en las áreas de Criptografía y Seguridad. Actualmente es profesora de tiempo completo en la Facultad de Ingeniería de la UNAM, donde realiza investigación y docencia. Sus intereses de investigación se encuentran en la privacidad de la información, los protocolos de autenticación descentralizados y distribuidos y aplicaciones de seguridad utilizando blockchain. Es miembro de la Academia Mexicana de Computación y parte del comité ejecutivo de ACM-W, además de participar activamente en los movimientos “Tecnovación” y “Mujeres en STEM, Futuras Líderes”.

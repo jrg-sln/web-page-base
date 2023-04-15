@@ -1,8 +1,9 @@
 +++
 title = "Sebastián Arjona Méndez Albarrán"
-dates = "Enero 2023"
 date = "2023-01-01"
-description = "Servicio social"
-images = ["/images/user.png"]
+description = "Servicio Social, FI"
+images = ["/images/equipo/servicio-social/sebastian-arjona.png"]
 category = "Alumnos de Ingeniería"
+disabledlink = "true"
+profilephoto = "true"
 +++

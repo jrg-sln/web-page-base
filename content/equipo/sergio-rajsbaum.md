@@ -3,8 +3,9 @@ title = "Dr. Sergio Rajsbaum"
 date = "2023-01-01"
 images = ["/images/equipo/sergio-rajsbaum.jpg"]
 category = "Investigadores"
+profilephoto = "true"
 +++
 
 {{< figure src="/images/equipo/sergio-rajsbaum.jpg" class="centered-image" alt="Sergio Rajsbaum" >}}
 
-Sergio  Rajsbaum  received  a  degree  in  Computer  Engineering from the National Autonomous University of Mexico (UNAM) in 1985, and a PhD in the Computer Science from the Technion, Israel,  in  1991.  He  was  a  postdoc  at  MIT  and  since  1991  he has been a faculty member at the Institute of Mathematics at UNAM.  His  main  research  interests  are  in  the  theory  of Distributed   Computing,   in   particular   issues   related   to coordination,   complexity   and   computability   and   has   also worked in graph theory and algorithms. He has published over 100  papers,  2  books  and  has  been  Chair  and  member  of  multiple  Program Committees  in  some  of  the  most  important  conferences  on  Distributed Computing. He has been member of the Mexican National System of Research Scholars (known as “SNI” for its Spanish acronym) for over 25 years, the last 10 years with the highest distinction (level III)
+Sergio Rajsbaum recibió el grado de  Licenciatura en Ingeniería en Computación de la Universidad Nacional Autónoma de México (UNAM) en 1985 y un doctorado en Ciencias de la Computación del Technion, Israel, en 1991. Fue postdoctorado en el MIT y desde 1991 ha sido docente del Instituto de Matemáticas de la UNAM. Sus principales intereses de investigación están en la teoría de Computación Distribuida, particularmente en temas relacionados con coordinación, complejidad y computabilidad, y también ha trabajado en teoría de grafos y algoritmos. Ha publicado más de 100 artículos, 2 libros y ha sido presidente y miembro de múltiples comités de programa en algunas de las conferencias más importantes sobre computación distribuida. Ha sido miembro del Sistema Nacional de Investigadores de México (conocido como “SNI”) por más de 25 años, los últimos 10 años con la distinción más alta (nivel III)
