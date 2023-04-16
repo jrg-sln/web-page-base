@@ -3,6 +3,8 @@ title = "Sergio Rajsbaum, co-responsable por la UNAM del proyecto de blockchains
 description = "Artículo"
 dates = "10 de agosto de 2022"
 date = "2022-08-10"
+images = ["/images/noticias-articulos/matem.jpg"]
+forcewidthfit = "true"
 link = "https://www.matem.unam.mx/acerca-de/noticias/proyecto-mega-ace"
 +++
 

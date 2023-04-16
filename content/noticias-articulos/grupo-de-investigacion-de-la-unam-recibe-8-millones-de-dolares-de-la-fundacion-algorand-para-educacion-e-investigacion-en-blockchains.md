@@ -3,6 +3,7 @@ title = "Grupo de investigación de la UNAM recibe 8 millones de dólares de la 
 description = "Artículo"
 dates = "11 de agosto de 2022"
 date = "2022-08-11"
+images = ["/images/noticias-articulos/blockchains.jpg"]
 link = "http://elfaro.cic.unam.mx/grupo-de-investigacion-de-la-unam-recibe-8-millones-de-dolares-de-la-fundacion-algorand-para-educacion-e-investigacion-en-blockchains/"
 +++
 

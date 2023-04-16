@@ -9,7 +9,7 @@
 
    `hugo server -D --debug --buildFuture`
 
-**3.** La página web estará disponible en http://localhost:1313/
+**3.** La página web estará disponible en http://localhost:1313/algorand
 
 
 ## Despliegue
@@ -130,10 +130,30 @@ Para agregar contenido a una sección, se recomienda tomar como ejemplo un docum
 
 ## Imágenes
 
-Para agregar imágenes nuevas, ya sea a través del front-matter (encabezado) de un archivo Markdown (para asignar una imagen a una tarjeta) o en su contenido, es necesario colocarlas dentro del subdirectorio `themes/up-business-theme/assets/images`. Dentro de éste, es posible estructurar las imágenes en subdirectorios según convenga. Por ejemplo, se podrían colocar todas las imágenes utilizadas para la página de Cursos en un subdirectorio `cursos`. Al momento de referenciar la imagen en los archivos Markdown, es necesario especificar un path absoluto (empezando con /) con respecto al subdirectorio `themes/up-business-theme/assets`. Es decir, si quisiera utilizar una imagen colocada en el subdirectorio `cursos` mencionado, el path correcto a utilizar sería `/images/cursos/imagen.png`.
+Para agregar imágenes nuevas, ya sea a través del front-matter (encabezado) de un archivo Markdown (para asignar una imagen a una tarjeta) o en su contenido, es necesario colocarlas dentro del subdirectorio `themes/up-business-theme/assets/images`. Dentro de éste, es posible estructurar las imágenes en subdirectorios según convenga. Por ejemplo, se podrían colocar todas las imágenes utilizadas para la página de Cursos en un subdirectorio `cursos`. Al momento de referenciar la imagen en los archivos Markdown (en el atributo `images` del encabezado, para mostrar la imagen en la tarjeta, o bien, para mostrar la imagen dentro del contenido del archivo Markdown), es necesario especificar un path absoluto (empezando con /) con respecto al subdirectorio `themes/up-business-theme/assets`. Es decir, si quisiera utilizar una imagen colocada en el subdirectorio `cursos` mencionado, el path correcto a utilizar sería `/images/cursos/imagen.png`.
 
+#### Nota para la sección Noticias/Artículos
 
-#### Ejemplos de cómo agregar una imagen dentro de un post (archivo Markdown):
+La imagen a colocar para la noticia o artículo en cuestión deberá seleccionarse y descargarse de forma manual de la página que contiene el artículo, para después colocarse en el directorio `assets/images/noticias-articulos` y colocar el path correcto en el encabezado del archivo Markdown (ver ejemplos).
+
+Es posible automatizar este proceso en un futuro, para lo cual se han considerado las siguientes opciones:
+
+- Utilizar una API como opengraph.io para obtener la imagen de preview del sitio web en cuestión. Muchas de las opciones disponibles son pagadas.
+- Realizar scraping de las imágenes del sitio a mostrar. Es decir, analizar el HTML del sitio web y buscar tags de imágenes, seleccionando la más relevante con alguna heurística (la forma en la que Twitter implementa esto es a través de tags con metadatos que indican que se trata de una imagen de preview). Sería necesario implementar un programa que realizara esta tarea (posiblemente utilizando una biblioteca como BeautifulSoup de Python) y se ejecutara en el servidor, para después guardar la imagen o el URL a ésta, y hacerla disponible en el contenido público del sitio.
+
+#### Ejemplo de cómo agregar una imagen para una tarjeta (encabezado del archivo Markdown):
+
+```
+... atributos del front-matter
+images = ["/images/noticias-articulos/felicitacion.jpg"]
+forcewidthfit = "true"
+
++++
+```
+
+Nótese que es posible utilizar los atributos `forcewidthfit` y `profilephoto` (descritos arriba) para modificar la forma en la que se presenta la imagen.
+
+#### Ejemplo de cómo agregar una imagen dentro de un post (contenido del archivo Markdown):
 
 ```
 ![Fotografía de Armando Castañeda](/images/equipo/armando-castaneda.jpg "Armando Castañeda")
