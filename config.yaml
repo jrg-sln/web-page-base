@@ -1,4 +1,4 @@
-baseURL: "http://odin.fi-b.unam.mx/algorand/"
+# baseURL: "http://odin.fi-b.unam.mx/algorand/"
 theme: "up-business-theme"
 languageCode: "en-us"
 canonifyurls: "true"
